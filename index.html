@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        style {
+
+        }
+    </head>
+    <body>
+        <h1>Friday Hack Day!</h1>
+        <div id="clock">
+
+        </div>
+        <script>
+            var d = new Date();
+            var clockArea = document.getElementById("clock");
+            var secs = d.getSeconds();
+            var mins = d.getMinutes();
+            var hours = d.getHours();
+
+            var timeDisplay = hours + " : " + mins + " : " + secs;
+
+            setInterval(function() {
+                    clockArea.innerHTML = timeDisplay;
+            }, 1000);
+        </script>
+    </body>
+</html>
